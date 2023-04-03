@@ -1,0 +1,19 @@
+<p>form-one works!</p>
+
+{{ formOne?.value | json }}
+
+<form [formGroup]="formOne" (ngSubmit)="processForm()">
+    <table>
+        <tr>
+            <td>Username</td>
+            <td><input type="text" formControlName="username"></td>
+        </tr>
+        <tr>
+            <td>Comment</td>
+            <td><input type="text" formControlName="comment"></td>
+        </tr>
+        <tr>
+            <button type="submit">Next</button>
+        </tr>
+    </table>
+</form>

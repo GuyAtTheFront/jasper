@@ -1,0 +1,14 @@
+<p>form-two works!</p>
+<form [formGroup]="imageForm" (ngSubmit)="processForm()">
+    <tr>
+        <td>Image File: </td>
+        <td><input type="file" accept="image/*" #imageFile></td>
+    </tr>
+    <tr>
+        <td>Description: </td>
+        <td><textarea cols="30" rows="10" formControlName="description"></textarea></td>
+    </tr>
+    <tr>
+        <button type="submit">Send</button>
+    </tr>
+</form>
